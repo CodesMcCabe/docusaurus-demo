@@ -1,0 +1,42 @@
+---
+id: report-spam-v-3
+title: "reportSpam"
+description: "Report a particular address to our APIs if you think it is spam"
+sidebar_label: "reportSpam"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VVGO2zYQvQrB/rSAbTnr3Y2rOltsk7gIChRBkn7FQTGmaIkxRSok5V1B0BV6hfz2eD1CZyitLSNJ0aKtfiTODMmZN++NWp5JL5yqgrKGp/yVrKwLDFgFLihRa3AMssxJ71mwzNaO3b584ZnascbWLBTK7JkKTHnmKyj5hAfIPU/f8te4ZM9kkCIe/W7C8Ugo0eDI33KDC7wRKvWTbHCjovsrCAV+e1HIEnja8tBUFOWDUyZHTyZ3UOuApswKP81kaaN1XMTKh0bLm41hbCZqH2w5jRbWkokxYbV1Kftqfrlcry+/I2O3MavkYdvaOlaovJAOC3S2zouqDhO2wgoNExq8f7Lh44M3/GYFrHByh44ihMqnSQKaimhmwpbJ9/DkmO6GswAulwFjf91qMHvcLpyEIAlTx+ydIZDZXjarBG4wL7wX0+LdhDv5oVZOZjwNrpaItgp6hGI3OeHad+0TcF5HJNmUgWnYAbTK2FZbsRcFKHPs9Q4h+Hn9hqDSfQf9BBcmOBABP0tl6CWDmD207kMtXfM3eze/l4+XV8+XF4ur5fLxt+v59aMfni4ycfv0eje/xOf64tnl9mqxmJ8XvQPtx1UPNXbIrvspQphR6S33UFZa+imCm9eQy0jI93CAHghMRdRO46tqQoGoTHhu+bt4k6+wVNrQ8ov5nF7n8NFehEGaQD6oKq0EkC957ymg/cv6P9uIDb8dUL8DlFEtBH7vaq0b5qIcZcag1xdyB5UnQGvaGgoZiXK+bcZ4R8+E20q6mNsLhI73Z5Esp4cFZiPvsQpPnY1yRLZh0BHFCUdu1P8GTWoKyr2wdDnSnQJI3SlPDouk7RnbJae0iDvSHR7mA52ZHtXUGhnurNt3s3w2VpbZhZirU7DVfd+GSPqUpi4pW0xjWiK/TUyDVh6v1QooKaub3JqR/2ipyy2okQFKSwwHtx1F0+p0mq3CyEerk28LXo6ccXnyepwKe/SMIo6m3EqnFQ3Rk4bGNXURbWV2NvJukMcfH3/7PaoYSUIgIbI99R7Noq4q60MJkbTD0Dhrxhld2xPt/4ufRK+MgBxMKo1FUDqx4e1Akrc8kjQ9/h5GqWGpBaZOQW1LKP7idNeRuZ9BxJ5MeSLEaWZ8sZr/YyB+tr5eYae5PAiMx/H1wOB/mPzXr4bZ+A370rWDEasb33lMZ/hx0PQrUPrSjabBLc6UKoy2fTLvzkT+4/M3yMQ/AWmY2K0=
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>reportSpam</h1>
+
+<MethodEndpoint method={"get"} path={"/v3/{apiKey}/reportSpam"}></MethodEndpoint>
+
+
+
+Report a particular address to our APIs if you think it is spam
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"address","description":"String - any valid blockchain address for NFT collections, contracts, mints, etc.","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"address"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,38 @@
+---
+id: summarize-nft-attributes
+title: "summarizeNFTAttributes"
+description: "Generate a summary of attribute prevalence for an NFT collection."
+sidebar_label: "summarizeNFTAttributes"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVs1u20YQfpXF9mID+rdlq6riQnWtICjaBImbSxQUK3JE0l7ubnaXslmCr9BX6LWP10foDEnJVGShP8ixvIicndmZ+eabGRU8BBfYxPhEKz7lL0GBFR6YYC5LU2FzptdMeG+TVYZiY2EjJKgA2FpbJhT7aXHLAi0lBHRFj3e4F5Hj0w+cTuZvXrH3I/Yj+FiHjp28liFY9h6sQ+VT/rHDHdgNfqJBwTMrMYbYe+Om/X6hwD9oe1/2op6QQQxp3gt02ldrj142wiZiJQEtC95o0iuoLCXv6LGbikThEWobLfNIq50EHYewFpn06LCtWpYlnhlhRQp+G5fCD9QTJvkBcrwtIaiM8DG+OwpMkGefG9JyiJWKeNtBqAPXDSHVlbSN98z5XMLVUjHWCzLnddqtJKwgESNktZ2yrwbnk8Xi/BsSlks162/NFliEOIliBNXHVmdRbDLfYTNnsDSBFM69WPL2xUt+NRMstrDGgy3SbXS/FS924S4588JG4FH3l5UU6h7NAwtEkFxnlukHVZX4HvJZX1xhXOgXw+Jlh1v4lCUWQj71NgOkReJlC8Wys8M10MpbEfh5GFpw7gCkdxWirMuuG0Umas2Kgz6GhoTN4cnN2+vL0RDJGTJ8HQ7HYySzMdp6CE972/p9ysDm/7CAg0e4nIxvJqOz8WRy+fVicDH87vosDObXF+vBOT4Xo+/PV+Ozs8F+5mshXSv1zxMlqj12Ec+QcCi4E6lBRncR6SgTEVRtFFBXdPid2IgaFKJzjv2k+MfKmTNauboPRoMB/ezDh/rkGJSnM2GMTAJBZ/07RwrFIQR6dYf9fFCIN0/dH+hM+boAIIK4NSIeEh8nCgfI/lQwVhuwPqkD9doL+Q6LIvPnkX+2/rdkxbDBV8h3nEtYdscqX1GygWdnUYN82x+C1sy2v8/4dSVmKaJGIWD1Es/IxDGvK+q1JiJGVGFRazU4+FjUFj1y/DkDpv83QVk/HU78qHj5KqQAqhIlvwKmNd+Si2CBR6QyrY96NuPoQe1dF9FikNl/7Cbqx7RaVXhlVC8OmvJT3t+M+kU9ucr+0dAStdYVhk2qf/7+2x+sWYMUWb328GDYqzAy2vlUqBYLjl69R4biqaG/zMaua+4R2r6RuAkpuGoZFw0AH/hmhIrT3Qo8EigCGGNSZFAUK+HgZyvLksQ106hiYeJocT8x42huX5zzzyZaM+iw/xoi8WpMb/9u/MsMTt42bXDKjrlvhELlbZ/bsLbbkkZ9jBQH22L9PAjA+JbZwXDfY/TLm1vstr8AWZdkcA==
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>summarizeNFTAttributes</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/{apiKey}/summarizeNFTAttributes"}></MethodEndpoint>
+
+
+
+Generate a summary of attribute prevalence for an NFT collection.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"totalSupply"} required={false} schemaName={"totalSupply"} qualifierMessage={undefined} schema={{"type":"string","description":"String - Total number of NFTs in a given NFT collection.","title":"totalSupply"}}></SchemaItem><SchemaItem collapsible={false} name={"summary"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Object mapping trait types to the prevalence of each trait within that type."}}></SchemaItem><SchemaItem collapsible={false} name={"contractAddress"} required={false} schemaName={"contractAddress"} qualifierMessage={undefined} schema={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"totalSupply\": \"string\",\n  \"summary\": {}\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

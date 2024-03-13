@@ -1,0 +1,38 @@
+---
+id: is-spam-contract-v-3
+title: "isSpamContract"
+description: "Returns whether a contract is marked as spam or not by Alchemy."
+sidebar_label: "isSpamContract"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVdtu4zYQ/RWCfdkFbMuO48R1vSncbLxYFCiKbPq0XhS0NJaYSCSXpJwIgn5hf2Ff+3n9hM7okshxU7To+kUyOeScOXPmqOQRuNBK46VWfMGvwedWOXafgE/AMsFCrbwVoWfSsUzYO4iYcMwZkTFtmdKebQu2SsMEsmLEB9yL2PHFR/6BIt6Ch7C++tOAO7B7sLRZ8tymmC3x3rhFEJQK/L22d9UoHon2qlBngdp5vHEvrBTbFPBkydtIegWVZ5QJkQ4zIRVuYbTRaRFr9biCiSPYiTz1mLAfWlUV7hlhRYYoW1wK/2CcMPJnKPA2SaQY4RN8dwRMUGZfGIpy3koV836CSIduGEGm69U+s0vnixQuNoqxUZg7r7NhvcJKWmLIc6rtgn03Pp2v16c/0GK1UcugO7ZGthMZU1N8YnUeJyb3A7bETigWpsK5Nxvev3jDL5aCJRZ2uNEx3Wf3R/HmEe6GMy9sDB5jf9+mQt3h8dCC8MAKnVum7xVb/fqe3UGxDMQF4sK8CItXA27hcy4tRHzhbQ4oAenTHovV4JHXTkyrKLLg3BFJH2pG2ZBddqoTTSTbaaob2C/rmydJvrq6vjw/mTChIoavk8lsxlxujLYeotejrn+fc7DFv2zg+AHO57Or+cl0Np+ff78en01+upxG4erybDc+xd/ZydvT7Ww6HR9WvhOp65X+vFCS2sMQ+YyIh5I7kRlU9BCZjnMRQz0yt2IvGjYQUkgjgvosfILUDHis+ac6ozNauWYYTsZjehxySGcxOyhPe8KYVIaC9oJbRwHlMQ96e4tjetSNmwRnvtljCQ498b/VOgVU3F6kOTCpnIzwUQ+e1Qaslw006cgAujb2crUXHM/H1gYX7AYFhO2XuzoZNU6i4bzsQSPWnFsT/f98EN8JLHaLwMtoRA5AvwEn4DVF77GTz6AP91PECg9IqMOIxiZwCjDwsaHkUUjH/2gs6QNtKNEEIG6MjFxnwYP9NCibSaqCZ6ySvne6JrfV3Z9fv/xRzwjOKsFCX2vonYxqwRrtfCZqFbQjeXTlQVvKJy19i29DIwGPbAYmRR8mSPWnoGzL/chruhdPBnwID2lKsAQKLMutcPCbTauKlpshp+ZE0tHn4mkoX6zom9vN3xbYiOXY+lrN8Nocuo/cf6zg1XXrQK/ZS+nbRaGKfs4OVufR5C0JqhlsT+CrMATje8eO3ORAt++ubnCm/gLWYNWr
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>isSpamContract</h1>
+
+<MethodEndpoint method={"get"} path={"/v3/{apiKey}/isSpamContract"}></MethodEndpoint>
+
+
+
+Returns whether a contract is marked as spam or not by Alchemy.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"isSpamContract"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","description":"<br/> True - if the queried contract is marked as spam. <br/> False - if the queried contract is considered valid."}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"isSpamContract\": true\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

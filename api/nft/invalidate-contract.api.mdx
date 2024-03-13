@@ -1,0 +1,38 @@
+---
+id: invalidate-contract
+title: "invalidateContract"
+description: "Marks all cached tokens for the particular contract as stale. So the next time the endpoint is queried it fetches live data instead of fetching from cache."
+sidebar_label: "invalidateContract"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVdtuIzcM/RVCfWgC+BbnWjebIk3Xi6DYtthN92WzKOgZ2aNEI2kljRNj4F/oL/S1n9dPKKnxZbLOFm3Rh/rFI5ISyUPysBa5DJlXLiprxEi8Rn8fALWGDLNC5hDtvTQBptZDLCQ49FFllUYPmTXRYxYBA4SIWvbgrU1GRj5GiKqU6SRN7qwyEVSAj5X0il5VEaYykoMAWs0l5BgRlAlRYg522iiVmcHU27IJpSc6IuIsiNF78cP4Bi5/uoZ3Q3gtY2HzAHs/6lx6eCd9oEz2xYeOoFixlJEkdKcWhg6UITr1vVzQY4rzdRgL+g7koEQxqkVcOLYK0ZN70uRyipWOJMptFrq5LG2StkE7D3Gh5cWtAehlVYi27CYJ1CwCQkpbP4IvBkdn4/HR1yxc3prz/vramMAt1KyQjLG31axwVezAeXBoINMYwotb0X74VlycIxReTklRxOjCqN9HzUksepkt+9/gi024twIi+pmMZPvLRKO5p+uZlxglLGzlwT6YhOa9XJz38YLiIr8Ullh2hJcfK+VlLkbRV5IqoKJuobjsbHBdt8NlnnsZwg5IbxOi0IWrTd80lpve4qpummrv5Zur0+EBoMmBPg8Ojo8hVM5ZH2W+31vXjxtq8TcLOHiUp2fHL8+Gh8dnZ6dfjQcnB99eHebZ5dXJdHBEv5Phd0eT48PDwdPMp6hDK/VPE11Sqz12Cc+ccahFwNJpGbqE9KzCmUwdm1VeUzB3OMcGFDq4BbWuER+Ss+CsCWxbi+FgwH9P4SN7dixNZB06p1WGrOvfBTaodyGwkzuZxd1unfj+BdxQOakYapqgX8/lBn6a1ZKogEQ83Q7LHjT3xgzGX1+k76BoGEk8R61yLpbz1kmijibDUGUZQ/dsuT6JFdbBrjxuPD1QZMokD9TK+TMBqmRkvow9LqipyptEZtfbS60ISD2RfieCG+azpGJeWrFhLJCepgzbATBSCFRJ6ja29ZUx3PGxWBHfgsJofh3BaKTyXVMMYvvKejgoDiJR8kUmDX3RdJLlptE6gq5U/7LhuGXLRJz0JDED65gIR6I/H/brZriX/WfDCtLP15TKPkYbAqqNjA/W3y97s16bjMw0pnC9woluGmBlyZ+S0OWAKZxuicqYFA6fgnRWK+TgrF7MrGnpNxIqDaqWAEvLfIB+0rLm0/Y162JLx6etboJBtpTpuNXSmvP3pGlZbEQzK71WvHe2jNPOaZlQV2ZqU9OtyOSP3379HVbrjEFq1hcpDnqJhZwNscQ03yuefbYoT3q23jLF/32fN6MX6f2+0wQUp5yaql415HsxH5LhqLW1d9InWAuCiY3rmiv2s9fLJYub7cCdmqvAzbdl888i9p/vqWeTbKZ5d2euhlqkrbIemX+Ywd6b1erah8+5XwnRLNo+12GtlztvpoIqSLS4ZaBLom4XW9d2dtETdnn18oZa/08EfJMD
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>invalidateContract</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/{apiKey}/invalidateContract"}></MethodEndpoint>
+
+
+
+Marks all cached tokens for the particular contract as stale. So the next time the endpoint is queried it fetches live data instead of fetching from cache.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"<br /> True if the contract was invalidated. <br/> False - if it wasn't."}}></SchemaItem><SchemaItem collapsible={false} name={"numTokensInvalidated"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"type":"number","description":"The number of tokens that were invalidated as a result of running this query."}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": \"string\",\n  \"numTokensInvalidated\": 0\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

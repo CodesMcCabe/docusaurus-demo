@@ -1,0 +1,42 @@
+---
+id: is-airdrop
+title: "isAirdrop"
+description: "Returns whether a token is marked as an airdrop or not. Airdrops are defined as NFTs that were minted to a user address in a transaction sent by a different address."
+sidebar_label: "isAirdrop"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVs1u40YMfhViekkA23Ic56duNkWajYugaLdI071sgoKWxtaspZnZmVESQfAr7Cv02sfrI5SUZFtpNsF220t9iYbkcMiP5MdUIpE+dsoGZbSYiCsZCqc93KcypNIBQjBLqUF5yNEtZQLoATWgcokzFowDbcIAzpoz6ZyERM6Vbkx/ml57CCkGuJekyZUOpAiGHBee/SeJk96D0vyUQ+0x5lDASx1gVpI0UfM53aVjazwQPRFw4cXknSD/cPbzJbwdwY8UsUk87LzJEvL8VjpPjnbFbU9YdJjLQBK6UwlNB8oVrfpBluRMceYWQ0rfPk5ljmJSiVBatvLBKb0gDWWFRRZIlJjY9xOZm1rahe/EhzKTpzcaYBAXPpi8X0ugYhFAbDLjJvDVcHw8nY6/YeHqRp9E62tTwjNVC0Y+pM4Ui9QWoQcn3hLmcYbev7oRXcc34vQEIXVyToo0BOsnUYQZJ1EOYpNH3+KrTbg3AgK6hQxk+9ssQ72k67GTGCSUpnBg7nWN5lKWJxGeUlz0LoUlVj3h5IdCOZmISXCFpAqokHVQXPU2uMZGUyXjcNaU6wlIv9SIQh/OW8NNF8wN5y25a2DtBXYurs6PRnvUdQnQ597ewQH4wlrjqJV2B+v6fSikKz+zgMMHeXR8cHE82j84Pj76ejo83PvufD+Jz84P58Mx/Q5Hr8ezg/394ePM55j5Tup/T7SDQT01l8nzuV9TmpevwczrhGvzAZxTlWeShyGVDzxbiYxVjhkDk2P4olzH45eqt45zRVPy0KdWSDj8SnjMbSZ9n5pkUeBC1sMWFy4j3+/xDpuc6GBLmjotbus3vDXas20lRsMh/3mcPdkzZjTLrENrMxUj66L3ng2qpxnNjMkk6qeTNnPRKVxTMgSmalBkWFRNLy9Q1gCaq1Ou5Qt3idY+fV+s+NcTxkpXB0/wTYTyLQVSpPKBUmTyaeiGpokMNuj2xB1mxReizHXKa6IjlzTJrGPimojobhRVzTCuom40RLN3a+Zj15MNT1RahnvjlqvBYtDlDD0PdZRO4Sxrytla8qfURc5xUhT9HJXWdRR88tKaTCHHZLJyYXRHv5EU+QxVR4C54VZGN+tY82nrzdjQ0fFpq5uhlx1lfdxqPfHdkjQdi41oYaTLFK+H7bB0c1rVYCs9N3U7tgPz5+8f/4B26zBIzZYhxd6gJgtrfMix7uWWCrq1eNTD1XYY/j97t5nKQC0e2YyQ4pzrrqraRnwn7kZkONlu103+BGdK8LBNVXGlfnXZasXihtC4QxPluem2ZPssZP/5Gvlkbs3wPl1p7QyLmvQ/P+idq5aId+Ffr4IX4t2un22ct9uR/odId4J+7tlWiLrsvrkOZ/0/Am+JlFhQug4xnsWxtKFz7cleeER6319c02j+BV0hpM8=
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>isAirdrop</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/{apiKey}/isAirdrop"}></MethodEndpoint>
+
+
+
+Returns whether a token is marked as an airdrop or not. Airdrops are defined as NFTs that were minted to a user address in a transaction sent by a different address.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"tokenId","description":"String - The ID of the token. Can be in hex or decimal format.","in":"query","schema":{"type":"string","default":"44"},"required":true,"title":"tokenId"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}>
+
+boolean
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

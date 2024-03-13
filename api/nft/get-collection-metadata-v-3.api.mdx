@@ -1,0 +1,42 @@
+---
+id: get-collection-metadata-v-3
+title: "getCollectionMetadata"
+description: "Queries NFT high-level collection/contract level information."
+sidebar_label: "getCollectionMetadata"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVl1u3DYQvgrBvrTA/rhNHoqN4yIwukXQNk1j+ykOCq52VqJNkTRJrSMIukKv0Nccr0foDCWttJZSuw1gYC1yOPPNx29mWPEt+MRJG6TRfMV/L8BJ8OzN+pJlMs3mCvagWGKUgoRslonRwYkksGZH6p1xuaCtBZ/xIFLPV+85nf8VgtiKINirJAHv+YcZt8KJHAI4Mqq4xg8MKqz8GUo8LQmCFSHD/32SQS74quKhtGTlg5M6xZ0t7EShAi5tTeLnW8hNXB3mcepDqeDsWjO2SAofTD6PK6yiJUYJGbdiX508/369fv6CFutrfbrsjq2Ni/mDYyFzpkgzW4QZO/VWaJYo4f3Laz50fM3PTgXLHOxwIwvB+tVyKRQlUS4Sky9/EC8PcK85C8KlEND2j40S+haPJw5EAFaawjFzr9mrt6/ZLZSnS3GGuDAuwuL1jDu4K6SDLV8FVwBSLoMasFjPqpFJy3N/ixeqSEecXUSC2Zz9ZkFfgGAerRheL1IAURG9g0V3W3comPKJ17UxiElYKEWShUQVG0qng/8AXI1q+ThHSrYEveJe5FaBnyNZaSFSiCq7EXvRZIBxksIp/LFlyDCdGU8N/xDp8tZoTwcq/t3JCf0c501nUdSgA+0Ja5VMoqCXN54MqnFyZnODWCmaMxZckI37hucpCiZ5foPmzOwivXex8LaR5vMDFUQQ3cIY9CWeyYpc6MiR2KC0m3Cs8OgmGCa3mJHcldF9zy7Dv/aCY8EeQcVwO2WMe+tkAlP5HoNYky2zZMxipXdi6cONOMqFu4VglWgCjLMaGERfu0EQ6Vl0+Qjqz6Ns2T6mIxxH7f3rIt+AI//x9HnhHOiknMadtLtdjAHuMeJJ4a/7JOoHVD+mqa5kB4kNDdAdfMS2q4W6wip51F2vQJaZHCwWXKzVexnQy5UnT0+ROvHSHiJdxlPjO4jZSp8Yt30SOvLa2rOrd79MOZzktxtI+2doUJMNCTOW+mvslRwb8vnIeI7WDXva43IzuLAvo/2hP834XqjiS/oUtTscjJlpcZABzcEVX+6fLaumt9fLSYTUfcHtu6FK7leHEVRpCPfG3daLdDEcR3oXImwnqXc03auxpH8BlU/AEdE8F1LriIi+PFijJMXE3zI1erB/WMGyEXKwIHJDM0K4zcCavnpvxobBHn31exvhYbAZP/tdj6P0FncGFoel1IBTkl4e/RQa5lRH4ukNE1XXKubvv/78FBsxjmAiCZlthPft4iQ2A+MDdt6+408r56Fuq37MfPk7qymQgLpcYtOSsYaKpnga4bznUbirw+NqGiOmn2E6ZF9VxCxWYF3TcjPZSVFYayQSlOZOKA//ktbX79qXxzfsv74mJjNq6mz0bmmrjcdXQqfh/w/1c9HbRaHLYcwOVffeokdGhn0AB0XfGujJa8Pg2OhZcVTxP/14iVr8B4KnB5w=
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>getCollectionMetadata</h1>
+
+<MethodEndpoint method={"get"} path={"/v3/{apiKey}/getCollectionMetadata"}></MethodEndpoint>
+
+
+
+Queries NFT high-level collection/contract level information.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"required":true,"name":"collectionSlug","description":"String - OpenSea slug for the NFT collection.","in":"query","schema":{"type":"string","default":"boredapeyachtclub"},"title":"collectionSlug"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"String - Name of the queried NFT Collection"}}></SchemaItem><SchemaItem collapsible={false} name={"slug"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"The human-readable string used to identify the collection on OpenSea.","type":"string"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>floorPrice</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+Floor price data for the collection
+
+</div><SchemaItem collapsible={false} name={"marketplace"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"The marketplace the floor price is on","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"floorPrice"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"description":"Floor price of the collection on the marketplace","type":"number"}}></SchemaItem><SchemaItem collapsible={false} name={"priceCurrency"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"The currency of the floor price","type":"string"}}></SchemaItem></div></details></SchemaItem><SchemaItem collapsible={false} name={"description"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"OpenSea collection description"}}></SchemaItem><SchemaItem collapsible={false} name={"externalUrl"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Collection homepage"}}></SchemaItem><SchemaItem collapsible={false} name={"twitterUsername"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The twitter username of the collection"}}></SchemaItem><SchemaItem collapsible={false} name={"discordUrl"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The discord URL of the collection"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"name\": \"string\",\n  \"slug\": \"string\",\n  \"floorPrice\": {\n    \"marketplace\": \"string\",\n    \"floorPrice\": 0,\n    \"priceCurrency\": \"string\"\n  },\n  \"description\": \"string\",\n  \"externalUrl\": \"string\",\n  \"twitterUsername\": \"string\",\n  \"discordUrl\": \"string\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

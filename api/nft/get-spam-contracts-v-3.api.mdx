@@ -1,0 +1,38 @@
+---
+id: get-spam-contracts-v-3
+title: "getSpamContracts"
+description: "Returns a list of all spam contracts marked by Alchemy."
+sidebar_label: "getSpamContracts"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVM2O00gQfpVWc2GlJJ4FDiiEQdEugxASIBZOk9GqYldsz7S7m+5ywLL8CrzCXnk8HoEq28l4yMKFXGJ3V1d9/n661RnGNJSeSmf1Ur9DqoONCpQpIym3U2CMih4qlTpLAVKKqoJwg5naNmpt0gKrZqFnmiCPenmp/5Hav5Ew7VtezXTEsMcgm62ug+EpBZGPyyRpLdInF266Rb6AsVXqqsTuiDvuIZSwNcgnWz1WyiPaupJJSMW8gtLyFld7Z5rc2eMKD85wB7UhHjgt7bqO9zwEqBjliMvyC9eBL19hw91KIcMDFfwcBRjIZGq8VEUKpc31dEDm0jjPsHL96pTRVaTG4PnGKrVI60iumvcrqpUlxbQaF5bq3tmjxxcXj57IYrexq+Rw7MIFVZR5gUFREVydF76mmVqxJlalBmJ8utHTxht9vgJVBNzxxoHpKbvP4OkR7kYrgpAjce2/WwP2ho+nAYFQNa4Oyn2yav32pbrBZpXAOePiuQxLdzMd8GNdBsz0kkKNbIGSzIRFofnznHtlwm2rI1Se1ZzzlLyGHHu7XMMeBrqYuVTswdo0VDB3M507fdXPid7ZOBjhwdmZ/N0lWc6yPdGS7IH3pkxB9pLrKAXtqYhue80WPZHrTb/MVAOpAuIxBgf3K8gyxiNgGGhwHgOVA7JDyfpYcTsNQoDeV4RVPLVS9yOM9S8GK4QwRpAB9tmcRrEbfjMt2HoSXrJCmjWWaP51SPF8/5Dx4GcmLXLNEANWmUuPokkGTf074okHOGaFGyFIgaRqqZP9w6QdnNIlP4LrE7hzPVGjqb799+Wren3xXtwowDi5A1V/Ls6EP+8iVdBrPYb5f5reIbm99czv3HuDkMRMJt7wHSNg+muuHT/1UvdUL4+XywkwJqlg+FLatluI+CGYrpPljzUGluTy6vY67IXKyijPzOoOTMRffNn9d2NK/1A/Q3vwqG1uFZdIDW44ppkrC/YFholV1mmKnibHTrJ3xwEvnr9nf34Hc+c6hA==
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>getSpamContracts</h1>
+
+<MethodEndpoint method={"get"} path={"/v3/{apiKey}/getSpamContracts"}></MethodEndpoint>
+
+
+
+Returns a list of all spam contracts marked by Alchemy.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"contractAddresses"} required={false} schemaName={"string[]"} qualifierMessage={undefined} schema={{"type":"array","items":{"type":"string"},"description":"A list of contract addresses earmarked as spam by Alchemy."}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"contractAddresses\": [\n    \"string\"\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

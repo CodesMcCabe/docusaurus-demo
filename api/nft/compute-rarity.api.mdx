@@ -1,0 +1,42 @@
+---
+id: compute-rarity
+title: "computeRarity"
+description: "Computes the rarity of each attribute of an NFT."
+sidebar_label: "computeRarity"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVtty2zYQ/ZUd9MWeoaiL5UtVxx1HsVpPp03Hdd2H2JOByBVJmwQYAFTM4egX+gt97ef1E7oASYmK7IyTVi8igQX27Nk9u6xYiDpQSW4SKdiETWWWFwY1mBhBcZWYEuQCkAcxcGNUMqddu8IF/DK79pnHDI80m7xj9Arnv17CzQh+RhPLUMPe2zREBTeoNF2/z+48plEt6ZUOVKxQKbmMjcn1pN+vBJqPUj2s/MjnaRBjVvqBzPpiYcjLkrDweYp0smKNpX1EUWTWO3nsZTwRtEXWuUzLSIr1CjkOccGL1JDDrulqtaK9nCueoWlxCXohO54nP2FJtyWWmZybmJ61BcatZ1Pm1koTKSJiXQehDHQvxEy61S69p9qUKZ7dCgA/KLSRWc+tQGWXAAKZSjWBbwbjk9ls/J1dXN2K0357bCYVxEkUE6kmVrKIYsqWB6c6p3wEKdf61S3rXnzLzk45xAoXtNEy3WX3e/5qDfeWgeEqQkO27+cpFw90PFDIKeWlLBTIj8Kl+AHL0z4/I1zkl2CxlccUfigShSGbGFUglUVi0g6LK2/NayCFUTww52GoUOsdkn5zjEIPpo0h8NoSFlK5wrSl1t4CexdX0+PRkCoyBHocDg8PQRd5LpXBcN9v8/ehQFW+MIGDRzw+Obw4GR0cnpwcfzsbHA1fTw/C4Hx6tBiM6Xc0ejOeHx4cDLYjX/BUd0L/NNAOB0Y+oLgMn4/9msK8fGOVZgN25j5MKctzhERAjI9AZIQYJBlPLTEZN18V63j8uey1OK1KHntUCqGFXzHNs5zE2KMiiQoeoesAgRW0x+75ktcxWSWW1AoEu3M+dC6FriU8Ggzs33b0ZG85Q2HsHs/zNAm43evfa2tQ7UYk5/cYmB0e37plVySkdEtpp6ElYiFbZklxKVnaUwRWyRyVSWqIzrp5brxxpXi548yW47o5aleIdHWigPQog4TkE0KucMlTFAG6LBnM9FNRbCOg6knM+9rmqRxugaDCWpeLPQdEHUZSlR4kPvrwI6dOMbUNxoMZD9ADNIFvk0/Aihd4uLFmaw06H83Vf8QUEFVn7sFrsvHgXETWb+tgE3zHCzXuOaodL7NUUsopYblMhIFl7VTJDAYkAxiCQrpOU420Wd3cXsef6PaUg0qvNR/Wr287fvPzmOXa1RdVuJWrm31XrkgIFz5SJdrBVU8FanpktBZBh7YvF4OVU+aGJF0Z1SPLzpcJ6y9H/arumav+p4hs4ToGG3X+89eff0Mzdy2ges7SxtB3nSmX2mTcCWfde7dv3OK+2qjvqz4E6rwa4q2fpyQ7C8HN+KqJ7h1bjshwsp6s23CIlJgQW7uqmnONv6t0tbLLdUOzWQgTbT8DNs322Qj+9zHyZHx1VeyOtKY4mGv6Lwe9d9U04n34z6PgM3g342eD827zkfWFTHdAP+e27Z+i7Pps4bTfCHZKxCQvagsbxZ0HAeamc2xnLmyp6YeLa9L4vw7fsEs=
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>computeRarity</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/{apiKey}/computeRarity"}></MethodEndpoint>
+
+
+
+Computes the rarity of each attribute of an NFT.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"tokenId","description":"String - The ID of the token. Can be in hex or decimal format.","in":"query","schema":{"type":"string","default":"44"},"required":true,"title":"tokenId"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>rarities</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+NFT attributes and their associated prevalence.
+
+</div><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"trait_type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Name of the trait category, i.e. Hat, Color, Face, etc."}}></SchemaItem><SchemaItem collapsible={false} name={"value"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Value for the trait, i.e. White Cap, Blue, Angry, etc."}}></SchemaItem><SchemaItem collapsible={false} name={"prevalence"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"type":"number","description":"Floating point value from 0 to 1 representing the prevalence of this value for this trait type."}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"rarities\": [\n    {\n      \"trait_type\": \"string\",\n      \"value\": \"string\",\n      \"prevalence\": 0\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,38 @@
+---
+id: is-holder-of-collection
+title: "isHolderOfCollection"
+description: "Checks whether a wallet holds a NFT in a given collection"
+sidebar_label: "isHolderOfCollection"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/RWCfWgC+H6L42ZTeJ24XRTtFtvt7sMmKGiJlhRTJJeknBiCf6G/0Nd+Xj+hM5RsKXFcBLv1S0TOkDxnLmeS05DbwCTaJUrSCZ3FPFhZch9zF3NDGLlnQnBHYiVCC8tf5u9JIuEjStZckkCBNfBnG9SxyNLJJ4o+01/fkA898jNco+DgyVsRwnUfuLHge0pvG1Qzw1LuYAfO5FTCAt5nOvmJb+CyBNFo5mL4tkHMU0YnOXUbjV7WmURGYAn5kmXCwVaoAtsMear8bp3ShXUbwS9vJCGtILNOpU2/Q3LcIshBmQn5pjMYz+eD73BzeyMv2rtjc2VInEQYDhcblUWxzlyDXFjNIACCWfvqhtYvvqGXF4zEhi/BEDun7aTdZgJJbFqBStvfs1d7uDeUOGYi7sD3j4VgcgXHA8OZ42SjMkPUvfTRXPHNRZtdAi54F2DRbYMa/jlLDA/pxJmMQwYSJ2pR3Db2cS3SeBCb33wgSZN8LNLMwtBwa4lTJMBKIEsgHyjpDAscQoF0xYluvTApnYdwHE5Hr+e90flowObnV2f8Ojznnf71sD/oDq/6Z2x6PuoMhsjGp/xzxg3m/xi1kkiN2g7etMB+nONsx2PHEslBmfui3pM8uX43O+t1CZMhgc9udzgkNtNaGcfD0xZ9gvNlYeBn4+H1uNcfjsdn5/POqPt61g+D6Wy07AzgN+pdDRbDfr/zOKlLJmyN+lOiW+iihyaUSohxyKllqRbcNqGIooxF3DdjkBkBYO7YmhVBgYXeQFdKeusfs1pJi7457XU6+Odx+MAfH+bSoY1pLZKAoa19Z9EhPwyBWtyBKBwk4oo5RgwXUNohVthOXL61VWURtYTIb8C8AnlBpZFlenZCgxnQRmluXFLATuyPCuXl7XJWyVGFZqGU4EwewPlYahxWQKFmpdYBGPsYROXyFMu2+DUoAvJheQOJex5Sg/IHiCMqYKF50NLgu09hg66ZyL4wlVgMqVdbuDLyre7Vc0Lb6147LxRh2z4CzHKz3ikxvjLZ61YuubtXZrVtRa26hsml84BNwhaiyEPpiZ9cZilCBkDNlCVSekC4slwrkTCEp8QmUrJm3+9k6YIltQ2WKuw1ZhY1b1xVtyntajZcVbYFs7xm9MvKakF/V2Cpeey3IsWNSHBcVd1c57T1cU/kUvmCKxv1n7/+/JuUUxCDVEw9MHRbvsO1si5lvkZLDTuSlkcFm1d9+HVjumgLB8XY1gKIICSf9LwsmU903QPHSTWMn4MHxGMggu55jjH93YjtFrcLbcRaChOL5VFp2VFGJ+9K2TslXzGUnuVWtNl+ApZNRv0MeTnA/32M/AfWw5FWgb6tuu7LQ3zs+XITxK/+5g7W7t8KHBwxaBY3NRmbBgHX9fgejIpHEvXD9Xvonn8BlzSThA==
+sidebar_class_name: "get api-method"
+info_path: api/nft/🎨-nft-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>isHolderOfCollection</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/{apiKey}/isHolderOfCollection"}></MethodEndpoint>
+
+
+
+Checks whether a wallet holds a NFT in a given collection
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"apiKey","in":"path","schema":{"type":"string","default":"docs-demo","description":"<style>\n  .custom-style {\n    color: #048FF4;\n  }\n</style>\nFor higher throughput, <span class=\"custom-style\"><a href=\"https://alchemy.com/?a=docs-demo\" target=\"_blank\">create your own API key</a></span>\n"},"required":true,"title":"apiKey"}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"wallet","description":"String - Wallet address to check for contract ownership.","schema":{"type":"string","default":"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"},"in":"query","required":true,"title":"wallet"}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"contractAddress","description":"String - Contract address for the NFT contract (ERC721 and ERC1155 supported).","in":"query","schema":{"type":"string","default":"0xe785E82358879F061BC3dcAC6f0444462D4b5330"},"required":false,"title":"contractAddress"}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"isHolderOfCollection"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","description":"Whether the given wallet owns any token in the given NFT collection."}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"isHolderOfCollection\": true\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
